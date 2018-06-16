@@ -1,0 +1,13 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.4
+
+Metrics/BlockLength: { Exclude: ['*.gemspec', spec/**/*_spec.rb] }
+Style/StringLiterals: { EnforcedStyle: double_quotes }
+Style/SymbolArray: { EnforcedStyle: brackets }
+Style/TrailingCommaInArguments: { EnforcedStyleForMultiline: consistent_comma }
+Style/TrailingCommaInArrayLiteral: { EnforcedStyleForMultiline: consistent_comma }
+Style/TrailingCommaInHashLiteral: { EnforcedStyleForMultiline: consistent_comma }
+Style/WordArray: { EnforcedStyle: brackets }
+Style/GuardClause: { MinBodyLength: 3 }
