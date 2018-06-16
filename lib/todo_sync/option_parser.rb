@@ -28,12 +28,11 @@ module TodoSync
     end
 
     def lint(*)
-      output.puts "linting!!!"
       config.lint = true
     end
 
     def help(*)
-      output.puts parser
+      output parser
       exit
     end
   end
