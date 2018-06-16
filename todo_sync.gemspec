@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.4"
 
+  spec.add_dependency "junk_drawer", "1.5.0"
   spec.add_dependency "launchy", "~> 2.4.3"
   spec.add_dependency "rainbow", "~> 3.0"
 

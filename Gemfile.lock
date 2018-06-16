@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     todo_sync (0.0.1)
+      junk_drawer (= 1.5.0)
       launchy (~> 2.4.3)
       rainbow (~> 3.0)
 
@@ -39,6 +40,7 @@ GEM
     hashdiff (0.3.7)
     jaro_winkler (1.5.1)
     json (2.1.0)
+    junk_drawer (1.5.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (3.1.5)

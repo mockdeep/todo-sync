@@ -14,6 +14,7 @@ guard :rspec, cmd: "bundle exec rspec" do
 end
 
 guard :rubocop, cli: ["-a"] do
+  watch(%r{exe/*})
   watch(/.+\.gemspec$/)
   watch(/.+\.rb$/)
   watch(%r{(?:.+/)?\.rubocop(?:_todo)?\.yml$}) { |m| File.dirname(m[0]) }
