@@ -26,20 +26,22 @@ module TodoSync
 
       return values[index] if index && values[index]
 
-      output "!!! please enter a valid option !!!".color(:red)
+      output "\n!!! please enter a valid option !!!".color(:red)
 
       select_from(values)
-    end
-
-    def output_indexed(collection)
-      collection.each_with_index do |item, index|
-        output "#{index + 1}. #{item}"
-      end
     end
 
     def goodbye
       output "\ngoodbye".color(:yellow)
       exit
+    end
+
+    private
+
+    def output_indexed(collection)
+      collection.each_with_index do |item, index|
+        output "#{index + 1}. #{item}"
+      end
     end
 
     def input_or_exit

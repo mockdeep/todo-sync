@@ -12,6 +12,10 @@ module TodoSync
     }.freeze
 
     def initialize
+      reset
+    end
+
+    def reset
       DEFAULT_SETTINGS.each do |name, value|
         public_send("#{name}=", value)
       end
