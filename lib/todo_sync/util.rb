@@ -13,7 +13,7 @@ module TodoSync
 
     def input(text)
       config.output.print text
-      STDIN.gets
+      config.input.gets
     end
 
     def select_from(values)
