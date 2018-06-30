@@ -21,9 +21,13 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.4"
 
-  spec.add_dependency "junk_drawer", "1.5.0"
-  spec.add_dependency "launchy", "~> 2.4.3"
+  spec.add_dependency "activesupport", "~> 5.1"
+  spec.add_dependency "json", "~> 2.1"
+  spec.add_dependency "junk_drawer", "~> 1.5"
+  spec.add_dependency "launchy", "~> 2.4"
   spec.add_dependency "rainbow", "~> 3.0"
+  spec.add_dependency "tty-prompt", "~> 0.16"
+  spec.add_dependency "typhoeus", "~> 1.3"
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "byebug", "~> 10.0"
@@ -35,5 +39,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop", "0.57.2"
   spec.add_development_dependency "rubocop-rspec", "1.27.0"
   spec.add_development_dependency "simplecov", "~> 0.16"
+  spec.add_development_dependency "vcr", "~> 4.0"
   spec.add_development_dependency "webmock", "~> 3.4"
 end
