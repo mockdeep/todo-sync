@@ -27,7 +27,6 @@ module TodoSync
     def run_lints
       LINTERS.each { |linter| tasks.each(&linter) }
       output "all done!!!".color(:green)
-      goodbye
     end
 
     def tasks

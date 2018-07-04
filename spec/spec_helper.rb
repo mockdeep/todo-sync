@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
-require_relative "../lib/todo_sync"
+require_relative "./support/exit"
 require_relative "./support/vcr"
+require_relative "./support/coverage"
+require_relative "./support/invoke_matcher"
+
+require_relative "../lib/todo_sync"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -29,4 +33,8 @@ RSpec.configure do |config|
 
   config.order = :random
   Kernel.srand config.seed
+
+  config.after do
+    TodoSync.config.reset
+  end
 end
